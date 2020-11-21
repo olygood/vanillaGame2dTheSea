@@ -1,4 +1,4 @@
-/*cavas setup================================================================*/
+/*cnavas setup================================================================*/
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 
@@ -77,8 +77,13 @@ class Player {
 }
 const player = new Player();
 /*bubbles======================================================================*/
+const bubblesArray = [];
+class Bubble {
+    
+}
 /*animation loop==============================================================*/
 function animate(){
+    ctx.clearRect(0,0, canvas.width, canvas.height);
     player.update();
     player.draw();
     requestAnimationFrame(animate);
